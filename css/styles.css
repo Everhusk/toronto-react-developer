@@ -5,26 +5,27 @@ body {
 .toronto-img {
   width: 100%;
   border: 40px solid white;
-  height: 100vh;
-  position: absolute;
-  background: url("../img/logo.svg");
+  height: 30vh;
   background-repeat: no-repeat;
-  background-size: contain;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  background-size: cover;
 }
-@media all and (max-width: 992px) {
+@media all and (max-width: 700px) {
   .toronto-img {
-    position: relative;
-    height: 250px;
+    height: 60vh;
   }
+}
+.react-logo {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+}
+.sovilon-logo {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
 }
 .footer {
   text-align: center;
-}
-.abovethefold {
-  height: 100vh;
 }
 .jumbotron {
   background-color: rgba(0, 0, 0, 0.5);
@@ -32,8 +33,6 @@ body {
 }
 @media all and (max-width: 992px) {
   .jumbotron {
-    border-radius: 0px !important;
-    background-color: white;
     color: black;
   }
   .jumbotron .bottom-border {

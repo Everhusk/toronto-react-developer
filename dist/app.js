@@ -7,21 +7,8 @@ var TorontoReactDeveloper = React.createClass({displayName: "TorontoReactDevelop
 
 	handleLearnMore:function(e){
 
-		var link = document.createElement("a");
+		document.location = "mailto:michael" + "@" + "sovilon.com";
 
-		var link_href = document.createAttribute("href");
-
-		var firstThird = "michae";
-		var secondThird = "l@sovil";
-		var thirdThird = "on.com";
-
-		link_href.value = "mailto:" + firstThird + secondThird + thirdThird;
-
-		link.setAttributeNode(link_href);
-		//Simulate a click
-		link.dispatchEvent( new Event("click"));
-
-		link = null;
 	},
 
 	render:function(){
@@ -33,11 +20,12 @@ var TorontoReactDeveloper = React.createClass({displayName: "TorontoReactDevelop
 
 
 		      React.createElement("div", {className: "row abovethefold"}, 
-		      		React.createElement("div", {className: "toronto-img"}), 
-			      	React.createElement("div", {className: "col-xs-12 col-md-5"}, 
-			        React.createElement("h1", null, "Hire a ReactJS Developer in Toronto "), 
-
-			        React.createElement("p", null, 
+		      		React.createElement("img", {className: "toronto-img", src: "../img/logo.svg"}), 
+			      	React.createElement("div", {className: "col-xs-12 col-md-6 col-md-offset-3"}, 
+			        React.createElement("h1", {style: {textAlign:'center'}}, "Hire a ReactJS Developer in Toronto "), 
+			        React.createElement("div", {className: "row"}, 
+			        	React.createElement("div", {className: "col-xs-12 col-sm-8 col-sm-offset-2"}, 
+			        		React.createElement("p", null, 
 			        "Your ReactJS development needs could be as easy as:"
 			        ), 
 			        React.createElement("p", null, 
@@ -45,55 +33,25 @@ var TorontoReactDeveloper = React.createClass({displayName: "TorontoReactDevelop
 			        "import ReactDeveloper from './TorontoReactDeveloper'\n\n<ReactDeveloper workOn={my_awesome_project}/>"
 			        )
 			        ), 
-			        React.createElement("p", null, React.createElement("a", {className: "btn btn-lg btn-block btn-success", onClick: this.handleLearnMore, role: "button"}, "Ask About Availability")), 
-
-			        React.createElement("a", {className: "btn btn-link", href: "#more"}, "Learn More"), 
-
+			        React.createElement("p", null, React.createElement("a", {className: "btn btn-lg btn-block btn-success", onClick: this.handleLearnMore, role: "button"}, "Ask About Availability"))
+			        	)
+			        ), 
+			        
 			        React.createElement("div", {className: "bottom-border"})
 			      )
 		      ), 
 
 
-		      React.createElement("div", {className: "row marketing"}, 
-		      	React.createElement("div", {className: "col-xs-12 col-sm-8 col-sm-offset-2"}, 
-		        React.createElement("div", {className: "col-lg-6"}, 
-
-		        React.createElement("a", {id: "more"}), 
-			      React.createElement("h4", null, "I Love ReactJS"), 
-				  React.createElement("p", null, "I believe it is the best way to create a maintainable, developer-friendly and ultimately more successful software web project." + ' ' +
-				  "A passionate developer is a happy developer."), 
-
-		          React.createElement("h4", null, "Modular Development"), 
-		          React.createElement("p", null, 
-					"A React component can be as large as an entire app, or as small as a button. I am similar:", 
-		          React.createElement("ol", null, 
-		          	React.createElement("li", null, "I can be used for an entire project, or to strengthen your development bandwidth."), 
-		          	React.createElement("li", null, "I don", "'", "t need to know about your entire project in order to be effective. I can be stateless!")
-		          )
-		        	), 
-		          React.createElement("h4", null, "7+ Years Experience"), 
-		          React.createElement("p", null, 
-		          "I have been developing iOS software since 2008 and web software since 2000."
-		          )
-		        ), 
-
-		        React.createElement("div", {className: "col-lg-6"}, 
-
-		          React.createElement("h4", null, "React + Native"), 
-		          React.createElement("p", null, "With the coming arrival of React Native, a developer can use React to create a native mobile experience." + ' ' +
-		          "This works similar to Appcelerator Titanium in the sense that the end result ", React.createElement("em", null, "is"), " a true native app."), 
-
-		          React.createElement("p", null, "This is great, and my 7+ years of experience on iOS and mobile web will definitely help on both sides of the fence."), 
-
-		          React.createElement("h4", null, "This website is built with React.js"), 
-		          React.createElement("p", null, "Go ahead and view the browser source.")
-		        )
-		      )
+		      React.createElement("div", {className: "row developer-list"}
+		      	
 
 		      ), 
 
 		      React.createElement("footer", {className: "footer"}, 
-		        React.createElement("p", null, "Copyright Sovilon Software Inc. 2015")
+		      React.createElement("h4", null, "This website is built with React.js"), 
+		          React.createElement("p", null, "Go ahead and view the browser source."), 
+		      	React.createElement("a", {href: "http://www.sovilon.com"}, React.createElement("img", {className: "sovilon-logo", src: "../img/sovilon.png"})), 
+		        React.createElement("p", null, "One of the services maintained by ", React.createElement("a", {href: "http://www.sovilon.com"}, "Sovilon Software Inc."))
 		      )
 
 		    )

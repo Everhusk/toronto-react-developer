@@ -1,11 +1,10 @@
 body{
 
 	height: 100%;
-	background-color: @trd-blue;
+	background-color:white;
 }
 
-// @trd-blue:#73cfef;
-@trd-blue:white;
+@trd-blue:#73cfef;
 
 @header-img-height:250px;
 
@@ -15,21 +14,29 @@ body{
 
 	width:100%;
 	border:40px solid white;
-	height: 100vh;
-	position: absolute;
-	background: url("../img/logo.svg");
+	height: 30vh;
 	background-repeat: no-repeat;
-	background-size: contain;
-	top:0;
-	left:0;
-	z-index: -1;
+	background-size: cover;
 	// border-bottom:20px solid @trd-blue;
 
-	@media all and (max-width:@screen-md-min){
+	@media all and (max-width:700px){
 
-		position: relative;
-		height: @header-img-height;
+		height:60vh;
 	}
+}
+
+.react-logo{
+
+	width:80px;
+	height:80px;
+	background-size: contain;
+}
+
+.sovilon-logo{
+
+	width:80px;
+	height:80px;
+	background-size: contain;
 }
 
 .footer{
@@ -37,18 +44,14 @@ body{
 	text-align: center;
 }
 
-.abovethefold{
-
-	height: 100vh;
-}
 
 .jumbotron{
 
 	@media all and (max-width:@screen-md-min){
 
 		// height: auto;
-		border-radius: 0px !important;
-		background-color: white;
+		// border-radius: 0px !important;
+		// background-color: white;
 
 		color:black;
 
