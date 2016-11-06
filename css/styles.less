@@ -1,0 +1,80 @@
+body{
+
+	height: 100%;
+	background-color: @trd-blue;
+}
+
+// @trd-blue:#73cfef;
+@trd-blue:white;
+
+@header-img-height:250px;
+
+@screen-md-min:992px;
+
+.toronto-img{
+
+	width:100%;
+	border:40px solid white;
+	height: 100vh;
+	position: absolute;
+	background: url("../img/logo.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	top:0;
+	left:0;
+	z-index: -1;
+	// border-bottom:20px solid @trd-blue;
+
+	@media all and (max-width:@screen-md-min){
+
+		position: relative;
+		height: @header-img-height;
+	}
+}
+
+.footer{
+
+	text-align: center;
+}
+
+.abovethefold{
+
+	height: 100vh;
+}
+
+.jumbotron{
+
+	@media all and (max-width:@screen-md-min){
+
+		// height: auto;
+		border-radius: 0px !important;
+		background-color: white;
+
+		color:black;
+
+		.bottom-border{
+
+			width: 100%;
+			background-color: black;
+			border-bottom:5px solid white;
+			// position: absolute;
+			// bottom: 0;
+			// left:0;
+			height: 15px;
+		}
+	}
+
+	background-color: fade(black, 50%);
+	color: white;
+
+	h1{
+
+		// color:white;
+		font-size:36px;
+	}
+	p{
+		// color:white;
+	}
+
+	// height: 100vh;
+}
