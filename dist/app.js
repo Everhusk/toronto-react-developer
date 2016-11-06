@@ -20,7 +20,7 @@ var TorontoReactDeveloper = React.createClass({displayName: "TorontoReactDevelop
 
 
 		      React.createElement("div", {className: "row abovethefold"}, 
-		      		React.createElement("img", {className: "toronto-img", src: "../img/logo.svg"}), 
+		      		React.createElement("img", {className: "toronto-img", src: "img/logo.svg"}), 
 			      	React.createElement("div", {className: "col-xs-12 col-md-6 col-md-offset-3"}, 
 			        React.createElement("h1", {style: {textAlign:'center'}}, "Hire a ReactJS Developer in Toronto "), 
 			        React.createElement("div", {className: "row"}, 
@@ -50,7 +50,7 @@ var TorontoReactDeveloper = React.createClass({displayName: "TorontoReactDevelop
 		      React.createElement("footer", {className: "footer"}, 
 		      React.createElement("h4", null, "This website is built with React.js"), 
 		          React.createElement("p", null, "Go ahead and view the browser source."), 
-		      	React.createElement("a", {href: "http://www.sovilon.com"}, React.createElement("img", {className: "sovilon-logo", src: "../img/sovilon.png"})), 
+		      	React.createElement("a", {href: "http://www.sovilon.com"}, React.createElement("img", {className: "sovilon-logo", src: "img/sovilon.png"})), 
 		        React.createElement("p", null, "One of the services maintained by ", React.createElement("a", {href: "http://www.sovilon.com"}, "Sovilon Software Inc."))
 		      )
 

@@ -19,7 +19,7 @@ var TorontoReactDeveloper = React.createClass({
 
 
 		      <div className="row abovethefold">
-		      		<img className="toronto-img" src="../img/logo.svg" />
+		      		<img className="toronto-img" src="img/logo.svg" />
 			      	<div className="col-xs-12 col-md-6 col-md-offset-3">
 			        <h1 style={{textAlign:'center'}}>Hire a ReactJS Developer in Toronto </h1>
 			        <div className="row">
@@ -49,7 +49,7 @@ var TorontoReactDeveloper = React.createClass({
 		      <footer className="footer">
 		      <h4>This website is built with React.js</h4>
 		          <p>Go ahead and view the browser source.</p>
-		      	<a href='http://www.sovilon.com'><img className="sovilon-logo" src="../img/sovilon.png"/></a>
+		      	<a href='http://www.sovilon.com'><img className="sovilon-logo" src="img/sovilon.png"/></a>
 		        <p>One of the services maintained by <a href='http://www.sovilon.com'>Sovilon Software Inc.</a></p>
 		      </footer>
 
