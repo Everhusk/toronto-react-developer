@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "fluxxor": "^1.5.2",
+    "react": "^0.12.2",
     "task-browserify": "0.0.2"
   }
 }
